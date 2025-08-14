@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Mishra - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .contact-info strong {
+            color: #667eea;
+            width: 100px;
+            display: inline-block;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .skill-item {
+            margin-bottom: 8px;
+            padding: 5px 0;
+        }
+
+        .skill-level {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+
+        .education-item, .project-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .education-item h3, .project-item h3 {
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        .education-details {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .project-tech {
+            background: #667eea;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        .objective {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            font-style: italic;
+            font-size: 1.1em;
+            line-height: 1.8;
+            border-left: 4px solid #667eea;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .achievements ul, .strengths ul {
+            list-style: none;
+        }
+
+        .achievements li, .strengths li {
+            background: #f8f9fa;
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            border-left: 3px solid #667eea;
+        }
+
+        .domain-knowledge {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .domain-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .domain-item h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background: #667eea;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>GAURAV MISHRA</h1>
+            <p>B.Tech Computer Science (Data Science) | 2nd Year Student</p>
+        </div>
+
+        <div class="content">
+            <div class="contact-info">
+                <p><strong>Email:</strong> gaurav.mishra@email.com</p>
+                <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+                <p><strong>LinkedIn:</strong> <a href="#" style="color: #667eea;">Your LinkedIn Profile URL</a></p>
+                <p><strong>Location:</strong> [Your City, State, India]</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/gauravm2076" style="color: #667eea;">github.com/gauravm2076</a></p>
+            </div>
+
+            <div class="section">
+                <h2>Career Objective</h2>
+                <div class="objective">
+                    Aspiring Data Scientist and Software Developer currently pursuing B.Tech in Computer Science (Data Science). Seeking internship opportunities and entry-level positions to apply academic knowledge in real-world projects. Passionate about leveraging data-driven insights to solve complex problems and contribute to innovative technology solutions.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Technology - Computer Science (Data Science)</h3>
+                    <p class="education-details">[University/College Name]</p>
+                    <p class="education-details">Current Year: 2nd Year (2023-2027)</p>
+                    <p class="education-details">CGPA: [Your CGPA]/10.0</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Higher Secondary Education (12th)</h3>
+                    <p class="education-details">[School Name]</p>
+                    <p class="education-details">Year: [Year] | Board: [Board Name]</p>
+                    <p class="education-details">Percentage: [Your Percentage]%</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Secondary Education (10th)</h3>
+                    <p class="education-details">[School Name]</p>
+                    <p class="education-details">Year: [Year] | Board: [Board Name]</p>
+                    <p class="education-details">Percentage: [Your Percentage]%</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-item">
+                            <strong>Python</strong> <span class="skill-level">- Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <strong>Java</strong> <span class="skill-level">- Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <strong>C/C++</strong> <span class="skill-level">- Basic to Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <strong>JavaScript</strong> <span class="skill-level">- Basic</span>
+                        </div>
+                        <div class="skill-item">
+                            <strong>SQL</strong> <span class="skill-level">- Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <strong>R</strong> <span class="skill-level">- Basic</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Database Management</h3>
+                        <div class="skill-item">
+                            <strong>MySQL</strong> <span class="skill-level">- Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <strong>PostgreSQL</strong> <span class="skill-level">- Basic</span>
+                        </div>
+                        <div class="skill-item">
+                            <strong>MongoDB</strong> <span class="skill-level">- Basic</span>
+                        </div>
+                        <div class="skill-item">
+                            <strong>Database Design</strong>
+                        </div>
+                        <div class="skill-item">
+                            <strong>Query Optimization</strong>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Data Science & Analytics</h3>
+                        <div class="skill-item">
+                            <strong>Data Analysis:</strong> Pandas, NumPy
+                        </div>
+                        <div class="skill-item">
+                            <strong>Visualization:</strong> Matplotlib, Seaborn, Plotly
+                        </div>
+                        <div class="skill-item">
+                            <strong>Machine Learning:</strong> Scikit-learn (Basic)
+                        </div>
+                        <div class="skill-item">
+                            <strong>Statistical Analysis</strong>
+                        </div>
+                        <div class="skill-item">
+                            <strong>Data Preprocessing</strong>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skill-item">
+                            <strong>IDEs:</strong> VS Code, PyCharm, IntelliJ IDEA
+                        </div>
+                        <div class="skill-item">
+                            <strong>Version Control:</strong> Git, GitHub
+                        </div>
+                        <div class="skill-item">
+                            <strong>Data Tools:</strong> Jupyter Notebook, Google Colab
+                        </div>
+                        <div class="skill-item">
+                            <strong>Cloud:</strong> AWS (Basic), Google Cloud (Basic)
+                        </div>
+                        <div class="skill-item">
+                            <strong>OS:</strong> Windows, Linux (Ubuntu)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Experience</h2>
+                <div class="education-item">
+                    <h3>Fresher - Currently seeking internship opportunities</h3>
+                    <p><strong>Academic Projects and Personal Learning:</strong></p>
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li>Working on various academic projects involving data analysis and web development</li>
+                        <li>Self-learning through online courses and tutorials</li>
+                        <li>Participating in coding challenges and hackathons</li>
+                        <li>Contributing to open-source projects on GitHub</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Domain Knowledge</h2>
+                <div class="domain-knowledge">
+                    <div class="domain-item">
+                        <h3>Data Science & Machine Learning</h3>
+                        <ul>
+                            <li>Statistical analysis and probability theory</li>
+                            <li>Data preprocessing and transformation</li>
+                            <li>Exploratory Data Analysis (EDA)</li>
+                            <li>Supervised and Unsupervised Learning</li>
+                            <li>Data visualization techniques</li>
+                            <li>Basic deep learning concepts</li>
+                        </ul>
+                    </div>
+
+                    <div class="domain-item">
+                        <h3>Software Development</h3>
+                        <ul>
+                            <li>Object-Oriented Programming principles</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Software Development Life Cycle</li>
+                            <li>Database design and management</li>
+                            <li>Web development fundamentals</li>
+                            <li>API development and integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="domain-item">
+                        <h3>Computer Science Fundamentals</h3>
+                        <ul>
+                            <li>Computer Networks and Security</li>
+                            <li>Operating Systems concepts</li>
+                            <li>Computer Architecture</li>
+                            <li>Discrete Mathematics</li>
+                            <li>Linear Algebra</li>
+                            <li>Computational Complexity Theory</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Academic Projects</h2>
+                <div class="project-item">
+                    <h3>Student Data Analysis Dashboard</h3>
+                    <div>
+                        <span class="project-tech">Python</span>
+                        <span class="project-tech">Pandas</span>
+                        <span class="project-tech">Matplotlib</span>
+                        <span class="project-tech">Streamlit</span>
+                    </div>
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li>Developed a web-based dashboard for analyzing student performance data</li>
+                        <li>Implemented data visualization charts and interactive filters</li>
+                        <li>Applied statistical analysis to identify performance trends</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <h3>Library Management System</h3>
+                    <div>
+                        <span class="project-tech">Java</span>
+                        <span class="project-tech">MySQL</span>
+                        <span class="project-tech">JavaFX</span>
+                    </div>
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li>Created a desktop application for library book management</li>
+                        <li>Implemented CRUD operations with database connectivity</li>
+                        <li>Designed user-friendly interface for librarians and students</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <h3>Personal Portfolio Website</h3>
+                    <div>
+                        <span class="project-tech">HTML</span>
+                        <span class="project-tech">CSS</span>
+                        <span class="project-tech">JavaScript</span>
+                        <span class="project-tech">Bootstrap</span>
+                    </div>
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li>Built responsive personal portfolio website</li>
+                        <li>Showcased projects and technical skills</li>
+                        <li>Implemented contact form with form validation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Certifications</h2>
+                <div class="education-item">
+                    <p><em>Add your certifications here, for example:</em></p>
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li><strong>Python for Data Science</strong> - [Platform Name] (In Progress)</li>
+                        <li><strong>Introduction to Machine Learning</strong> - [Platform Name] (Completed)</li>
+                        <li><strong>Database Management Systems</strong> - [Platform Name] (Completed)</li>
+                        <li><strong>Web Development Fundamentals</strong> - [Platform Name] (In Progress)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="two-column">
+                <div class="section">
+                    <h2>Achievements & Activities</h2>
+                    <div class="achievements">
+                        <ul>
+                            <li><strong>Academic Excellence:</strong> Maintaining consistent academic performance</li>
+                            <li><strong>Coding Practice:</strong> Regular participation on coding platforms</li>
+                            <li><strong>Technical Learning:</strong> Self-motivated learner</li>
+                            <li><strong>Team Projects:</strong> Experience in collaborative development</li>
+                            <li><strong>Problem Solving:</strong> Strong analytical thinking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Strengths</h2>
+                    <div class="strengths">
+                        <ul>
+                            <li><strong>Analytical Thinking:</strong> Strong problem-solving abilities</li>
+                            <li><strong>Quick Learner:</strong> Adaptable to new technologies</li>
+                            <li><strong>Team Player:</strong> Excellent communication skills</li>
+                            <li><strong>Detail-Oriented:</strong> Attention to code quality</li>
+                            <li><strong>Self-Motivated:</strong> Proactive in learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Languages & Interests</h2>
+                <div class="two-column">
+                    <div>
+                        <h3 style="color: #667eea; margin-bottom: 10px;">Languages</h3>
+                        <ul style="padding-left: 20px;">
+                            <li><strong>English</strong> - Fluent (Written and Spoken)</li>
+                            <li><strong>Hindi</strong> - Native</li>
+                            <li><strong>[Other Languages]</strong> - [Proficiency Level]</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: #667eea; margin-bottom: 10px;">Interests</h3>
+                        <ul style="padding-left: 20px;">
+                            <li>Data Science and Machine Learning</li>
+                            <li>Web Development and UI/UX Design</li>
+                            <li>Open Source Contribution</li>
+                            <li>Technology Trends and Innovation</li>
+                            <li>Competitive Programming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            References available upon request
+        </div>
+    </div>
+</body>
+</html>
